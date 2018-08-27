@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Voconet samples</title>
+		<style>
+			html *{				
+   				color: #000 !important;
+   				font-family: Arial !important;
+			}
+			th {
+				text-align: left;
+			}
+			table, th, td {
+				border: 1px solid black;
+			    	border-collapse: collapse;
+			}
+			th, td {
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Samples from voice conversion system</h1>
+		<p>Created by Ho Tuan Vu - Japan Advanced Institute of Science and Technology - Sept 4th, 2017</p>
+		<p>CMU-Arctic Database</p>
+		
+		<h2>Voice Conversion with Speaker Adaptive Layer structure</h2>
+		<table>
+			<tr>
+				<th>slt voice reconstructed</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_slt_reconstruct_SAL.wav" type="audio/wav">Y
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>bdl voice reconstructed</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_bdl_rec_SAL.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>bdl voice adapted to slt</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_bdl2slt_SAL.wav" type="audio/wav">Y
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>					
+		</table>
+		
+		<h2>Using LSF and MCEP feature</h2>
+		<table>
+			<tr>
+				<th>bdl voice natural</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_bdl_natural.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>bdl voice reconstructed using MCEP</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_bdl_mgc.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>bdl voice reconstructed using LSF</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_bdl_lsf.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>					
+		</table>		
+		
+		<h2> Modulation-constrained training strategy </h2>
+		<table>
+			<tr>
+				<th>slt voice natural</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_slt_original.wav" type="audio/wav">Y
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>slt voice reconstrucuted without MS-constrained training</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_slt_noMS.wav" type="audio/wav">Y
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>
+			<tr>
+				<th>slt voice reconstrucuted with MS-constrained training</th>
+				<th>
+					<audio controls>
+						<source src="arctic_b0410_slt_MS.wav" type="audio/wav">Y
+						Your browser does not support the audio element.
+					</audio>
+				</th>
+			</tr>					
+		</table>
+				
+		
+		<h2><b>Note:</b></h2>
+		<p> <b>slt</b>: female voice </p>
+		<p> <b>bdl</b>: male voice </p>
+		<p> <b>reconstructed voice</b>: input and output voice are similar </p>
+		<p> <b>adapted voice</b>: input and output voice are different </p>
+		<footer>
+    		<ul>
+        		<li><a href="mailto:tuanvu.ksvt92@gmail.com">email</a></li>
+        		<li><a href="https://github.com/tuanvu92">github.com/tuanvu92</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
